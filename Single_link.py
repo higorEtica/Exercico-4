@@ -41,7 +41,7 @@ def single_linkage_clustering(data, k):
         clusters[cluster1].update(clusters[cluster2])
         clusters.pop(cluster2)
         
-        # Atualizar a matriz de distâncias
+       
         dist_matrix = update_distance_matrix(dist_matrix, cluster1, cluster2)
 
     return clusters
